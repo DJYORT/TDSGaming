@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      overflow: hidden;
+      background-color: #BFFFC5;
+      padding: 20px 10px;
+    }
+
+    .header a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    .header-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .header-right {
+        float: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <a href="#default" class="logo"><img style="outline: 2px solid black;" src="TDS.png" alt="TDS Logo" height="50"
+        width="100"></a>
+    <div class="header-right">
+      <a href="index.html">Home</a>
+      <a href="lybrary.html">Game's</a>
+      <a href="About.html">About</a>
+      <a href="Help.html">Help</a>
+    </div>
+  </div>
+
+<html lang="en">
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      overflow: hidden;
+      background-color: #BFFFC5;
+      padding: 20px 10px;
+    }
+
+    .header a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    .header-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .header-right {
+        float: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <a href="#default" class="logo"><img style="outline: 2px solid black;" src="TDS.png" alt="TDS Logo" height="50"
+        width="100"></a>
+    <div class="header-right">
+      <a href="index.html">Home</a>
+      <a href="lybrary.html">Game's</a>
+      <a href="About.html">About</a>
+      <a href="Help.html">Help</a>
+    </div>
+  </div>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Paper Minecraft v11.7</h1>
+    <!-- iDev.Games Responsive Embed Code for Amoeba Online -->
+      <iframe src="https://scratch.mit.edu/projects/10128407/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    <!-- End Embed Code -->
+        <center>
+        <button onclick="openGame()" style="background-color: #ff9900; color: #fff; border: 1; border-color: #ff9900; vertical-align: center; font-size: 26px; width:40%; cursor: pointer; border-radius: 10px;"> Fullscreen </button>
+        <script>
+        function openGame() {
+            var win = window.open ()
+            var url = "https://scratch.mit.edu/projects/10128407/embed"
+            var iframe = win.document.createElement('iframe')
+            iframe.style.width = "100%"
+            iframe.style.height = "100%"
+            iframe.style.border = "none"
+            iframe.src = url
+            win.document.body.appendChild(iframe)
+        }
+        </script>
+        </center>
+        <div class="game-info">
+            <h2>Game Description:</h2>
+            <p>Paper Minecraft maintains the core mechanics of the original game, like building structures, mining resources, crafting items, and surviving in a world populated with different types of mobs (animals, monsters, etc.). However, it's all presented in a 2D side-scrolling perspective rather than the 3D open world of the original Minecraft.</p>
+                <p>Controls:</p>
+
+                <p>PC: Mouse to look
+                A & D to move 
+                W or Space to Jump
+                E to interract</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      overflow: hidden;
+      background-color: #BED3FE;
+      padding: 20px 10px;
+    }
+
+    .header a {
+      margin-top: auto;
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .header a:hover {
+      background-color: lightcoral;
+      color: black;
+    }
+
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    .header-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .header-right {
+        float: none;
+      }
+    }
+
+    .content {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="TDS/4.jpg" alt="Riley" style="width:10%">
+      <div class="header-right">
+        <a class="active" href="index.html">Home</a>
+        <a href="lybrary.html">Game's</a>
+        <a href="About.html">About</a>
+        <a href="Help.html">Help</a>
+      </div>
+    </div>
+    <div class="content">
+      <h1>Help</h1>
+      <p>Need assistance? We're here to help! </p>
+      <p><strong>Contact Us:</strong></p>
+      <p>Phone: (555) 555-5555</p>
+      <p>Email: contact@tds.com</p>
+      <p><strong>Send Us Your Suggestions:</strong></p>
+      <textarea rows="4" cols="50"></textarea>
+      <button onclick="submitSuggestion()">Submit</button>
+    </div>
+    <script>
+      function submitSuggestion() {
+        let suggestion = document.querySelector('textarea').value;
+        // Add your logic here to send the suggestion to your backend or server
+        alert('Thank you for your suggestion! ' + suggestion);
+        // Clear the textarea
+        document.querySelector('textarea').value = '';
+      }
+    </script>
+  </div>
+
+</body>
+
+</html>
+<style>
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+  }
+</style>
+<div class="footer">
+  <p>This is a Test</p>
+</div>
